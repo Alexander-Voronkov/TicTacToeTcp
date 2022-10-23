@@ -9,17 +9,16 @@ using System.Drawing;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 
-namespace MessagePacket
+namespace MessagePacketDll
 {
     [Serializable]
     public class MessagePacket
     {
         public Point Cell { get; set; }
-        public char Step { get; set; }
-        public MessagePacket(Point where, char step)
+        public string Message { get; set; }
+        public MessagePacket(Point where)
         {
             Cell = where;
-            Step = step;
         }
         public MessagePacket() { }
 

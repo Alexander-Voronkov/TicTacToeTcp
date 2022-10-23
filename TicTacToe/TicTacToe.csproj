@@ -79,5 +79,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GameDll\GameDll.csproj">
+      <Project>{174df0f4-04d8-47d4-a533-f64d9406b432}</Project>
+      <Name>GameDll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MessagePacket\MessagePacket.csproj">
+      <Project>{f0154fca-9b7f-4973-bbd4-dfa61b186340}</Project>
+      <Name>MessagePacket</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
