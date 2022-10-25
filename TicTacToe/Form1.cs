@@ -247,6 +247,7 @@ namespace TicTacToe
                 else if(mp.Message=="This field is busy!")
                 {
                     MessageBox.Show(mp.Message);
+                    SwitchBtn(true);
                     continue;
                 }
                 if (InvokeRequired)
